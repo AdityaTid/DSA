@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rigth Triangle</title>
+    <script>
+        function display(){
+            // alert(document.getElementById('len').value);
+            let r = document.getElementById('len').value;
+            let n = 1;
+            for (let i = 1; i <= r; i++) {
+               for (let j = 1; j <= i; j++) {
+                document.write(n);
+                n++;          
+               }
+                document.write("<br>");
+                
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <input type="number" name="length" id="len">
+    <input type="button" value="submit" onclick="display();">
+</body>
+</html>
